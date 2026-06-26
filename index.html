@@ -4,149 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GameIntel</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0d1117;
-color:white;
-line-height:1.6;
-}
-
-header{
-background:#161b22;
-padding:20px;
-position:sticky;
-top:0;
-z-index:1000;
-border-bottom:1px solid #30363d;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#58a6ff;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:3rem;
-margin-bottom:15px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-color:#b3b3b3;
-}
-
-.search{
-text-align:center;
-margin:30px;
-}
-
-.search input{
-width:90%;
-max-width:600px;
-padding:14px;
-border:none;
-border-radius:10px;
-font-size:16px;
-}
-
-.section{
-padding:60px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-margin-bottom:20px;
-color:#58a6ff;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#161b22;
-padding:20px;
-border-radius:12px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.discord{
-text-align:center;
-padding:50px 20px;
-background:#161b22;
-}
-
-.discord a{
-display:inline-block;
-margin-top:15px;
-padding:12px 25px;
-background:#5865F2;
-color:white;
-text-decoration:none;
-border-radius:8px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#161b22;
-margin-top:50px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 <nav>
+
 <div class="logo">🎮 GameIntel</div>
 
 <ul>
-<li><a href="#news">News</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#guides">Guides</a></li>
-<li><a href="#database">Games</a></li>
-<li><a href="#discord">Discord</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="guides.html">Guides</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -154,151 +28,48 @@ margin-top:50px;
 
 <section class="hero">
 <h1>Gaming News, Reviews & Guides</h1>
+
 <p>
-Your trusted source for gaming information, reviews,
-guides, game databases, and community discussions.
+Discover games, read reviews, find guides,
+and join our growing gaming community.
 </p>
+
+<a href="games.html" class="btn">Browse Games</a>
+
 </section>
 
 <div class="search">
-<input type="text" placeholder="Search games, reviews, guides...">
+<input type="text" placeholder="Search games (coming soon)">
 </div>
 
-  <section class="section">
+<section class="section">
 <h2>🔥 Featured Games</h2>
 
 <div class="grid">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="">
 <h3>Minecraft</h3>
-<p>Sandbox adventure and creativity game.</p>
+<p>Explore, build and survive in a limitless sandbox world.</p>
 </div>
 
 <div class="card">
-<h3>Roblox</h3>
-<p>Millions of community-created experiences.</p>
-</div>
-
-<div class="card">
+<img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=800" alt="">
 <h3>Fortnite</h3>
-<p>Battle royale and creative gaming platform.</p>
+<p>Battle royale action with constant updates.</p>
 </div>
 
 <div class="card">
-<h3>Grand Theft Auto V</h3>
-<p>Open-world action adventure game.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="news">
-<h2>📰 Gaming News</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Latest Releases</h3>
-<p>Stay updated on newly launched games.</p>
-</div>
-
-<div class="card">
-<h3>Industry Updates</h3>
-<p>Major announcements from developers and publishers.</p>
-</div>
-
-<div class="card">
-<h3>Esports</h3>
-<p>Tournaments, teams, and competitive gaming coverage.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="reviews">
-<h2>⭐ Reviews</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Minecraft</h3>
-<p>Rating: 9.5/10</p>
-</div>
-
-<div class="card">
-<h3>Fortnite</h3>
-<p>Rating: 8.8/10</p>
-</div>
-
-<div class="card">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800" alt="">
 <h3>Roblox</h3>
-<p>Rating: 8.7/10</p>
+<p>Millions of player-created experiences and games.</p>
 </div>
 
 </div>
-</section>
-
-<section class="section" id="guides">
-<h2>📖 Guides</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Beginner Guides</h3>
-<p>Learn game basics quickly.</p>
-</div>
-
-<div class="card">
-<h3>Tips & Tricks</h3>
-<p>Improve gameplay and performance.</p>
-</div>
-
-<div class="card">
-<h3>Walkthroughs</h3>
-<p>Step-by-step game progression help.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="database">
-<h2>📊 Game Database</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Minecraft</h3>
-<p>Developer: Mojang Studios</p>
-</div>
-
-<div class="card">
-<h3>Roblox</h3>
-<p>Developer: Roblox Corporation</p>
-</div>
-
-<div class="card">
-<h3>Fortnite</h3>
-<p>Developer: Epic Games</p>
-</div>
-
-</div>
-</section>
-
-<section class="discord" id="discord">
-
-<h2>💬 Join Our Discord Community</h2>
-
-<p>
-Share ideas, suggest games, discuss updates,
-and help improve the website.
-</p>
-
-<a href="#">Join Discord</a>
-
 </section>
 
 <footer>
-<p>© 2026 GameIntel. All rights reserved.</p>
+<p>© 2026 GameIntel</p>
 </footer>
 
 </body>
